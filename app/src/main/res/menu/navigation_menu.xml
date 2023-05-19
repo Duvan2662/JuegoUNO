@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/regla1"
+        android:icon="@drawable/iconouno"
+        android:title="Reglas 1"
+        />
+    <item
+        android:id="@+id/regla2"
+        android:icon="@drawable/iconouno"
+        android:title="Reglas 2"
+        />
+    <item
+        android:id="@+id/jugar"
+        android:icon="@drawable/controluno"
+        android:title="Jugar"
+        />
+
+</menu>

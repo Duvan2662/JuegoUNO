@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo3"
+    tools:context=".Juego">
+
+    <LinearLayout
+        android:id="@+id/uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/jugador1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagenAvatar1"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                tools:srcCompat="@drawable/avatar1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/uno"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/puestas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagenjuego"
+                android:layout_width="133dp"
+                android:layout_height="79dp"
+                />
+
+            <TextView
+                android:id="@+id/color"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#700353"
+                android:text="Color amarillo" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/diez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/dos"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/xd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/botonAmarillo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C6CA53"
+                android:text="Amarillo"
+                android:visibility="invisible"/>
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/botonRojo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C83E4D"
+                android:text="Rojo"
+                android:visibility="invisible"/>
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/botonAzul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0496FF"
+                android:text="Azul"
+                android:visibility="invisible"/>
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/botonverde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#26A96C"
+                android:text="Verde"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/diez"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/coger"
+                android:layout_width="90dp"
+                android:layout_height="155dp"
+                android:foreground="@drawable/prueba2"
+                android:text="Button"
+                android:enabled="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="UNO" />
+
+            <Button
+                android:id="@+id/pasar"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PASAR"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jugador2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagenAvatar2"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                tools:srcCompat="@drawable/avatar2" />
+
+            <TextView
+                android:id="@+id/nombrejugador2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Nombre"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cartas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="10"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70sp"
+        app:layout_constraintTop_toBottomOf="@id/tres"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <GridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp"
+                android:stretchMode="columnWidth"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:padding="10dp"
+                />
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
